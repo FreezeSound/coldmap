@@ -5,7 +5,10 @@ description = "Creating heatmaps of daily records"
 authors = [
     {name = "yzqzss", email = "yzqzss@yandex.com"},
 ]
-dependencies = []
+dependencies = [
+    "july @ git+https://github.com/thoellrich/july.git@fix-mpl.cbook.MatplotlibDepreciationWarning",
+    "typing-extensions>=4.12.2",
+]
 requires-python = ">=3.10"
 readme = "README.md"
 license = {text = "AGPL"}
@@ -17,3 +20,6 @@ build-backend = "pdm.backend"
 
 [tool.pdm]
 distribution = true
+
+[project.scripts]
+coldmap = "coldmap:main"
