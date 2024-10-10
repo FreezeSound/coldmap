@@ -1,0 +1,19 @@
+[project]
+name = "coldmap"
+version = "0.1.0"
+description = "Creating heatmaps of daily records"
+authors = [
+    {name = "yzqzss", email = "yzqzss@yandex.com"},
+]
+dependencies = []
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "AGPL"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
